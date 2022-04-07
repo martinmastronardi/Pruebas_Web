@@ -5,9 +5,14 @@ p {
 
 ol {
     color: darkgreen;
+    font-family: Arial;
     
 }
 
 ul {
     color: brown;
+}
+
+#cuadro{
+    color:gold;
 }

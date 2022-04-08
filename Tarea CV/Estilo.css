@@ -6,13 +6,38 @@ p {
 ol {
     color: darkgreen;
     font-family: Arial;
-    
+
 }
 
 ul {
     color: brown;
 }
 
-#cuadro{
-    color:gold;
+#cuadro {
+    height: 200px;
+    /*ALTURA*/
+    width: 200px;
+    /*ANCHO*/
+    color: gold;
+    /*COLOR LETRA*/
+    background-color: chocolate;
+    /*COLOR FONDO*/
+    box-sizing: border-box;
+    /*CENTRA EN LA CAJA*/
+    padding: 10px;
+    /*DISTANCIA DE BORDE INTERIOR*/
+    margin-left: 50px;
+    /*MARGEN IZQUIERDO*/
+    margin-top: 10px;
+    /*MARGEN DE ARRIBA*/
+    margin-bottom: 30PX;
+    /*MARGEN DE ABAJO*/
+}
+
+/*img {vertical-align:middle;}*/
+
+.FotoPerfil {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
 }

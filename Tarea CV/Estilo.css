@@ -41,3 +41,28 @@ ul {
     width: 150px;
     margin: 0 auto;
 }
+
+
+.CuadroVerde {
+    height: 200px;
+    /*ALTURA*/
+    width: 200px;
+    /*ANCHO*/
+    color: white;
+    /*COLOR LETRA*/
+    background-color: green;
+    /*COLOR FONDO*/
+    box-sizing: border-box;
+    /*CENTRA EN LA CAJA*/
+    padding: 10px;
+    /*DISTANCIA DE BORDE INTERIOR*/
+margin: 0 auto;
+
+}
+
+form{
+    height: 400px;
+    width: 400px;
+    background-color: aqua;
+    padding: 10px;
+}

@@ -64,13 +64,18 @@ ul {
     /*DISTANCIA DE BORDE INTERIOR*/
     border-radius: 20px;
     /*REDONDEA BORDES DE CAJA*/
-margin: 0 auto;
+    margin: 0 auto;
 
 }
 
-form{
+form {
     height: 400px;
     width: 400px;
     background-color: aqua;
     padding: 10px;
+    box-shadow: 10px 10px 5px black;
+    background: #1b00ff;
+    background: linear-gradient(43deg, #1b00ff 0%, #00ff00 80%);
+    background: -webkit-linear-gradient(43deg, #1b00ff 0%, #00ff00 80%);
+    background: -moz-linear-gradient(43deg, #1b00ff 0%, #00ff00 80%);
 }

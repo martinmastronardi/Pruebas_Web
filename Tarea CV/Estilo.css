@@ -32,6 +32,12 @@ ul {
     /*MARGEN DE ARRIBA*/
     margin-bottom: 30PX;
     /*MARGEN DE ABAJO*/
+    border-radius: 20px 0 20px 30px;
+    /*DEFINE QUE BORDE REDONDEAR*/
+    box-shadow: 10px 10px 5px black;
+    /*SOMBRA DE CUADRO*/
+    border: 2px solid white;
+    /*BORDE DE CUADRO*/
 }
 
 /*img {vertical-align:middle;}*/
@@ -56,6 +62,8 @@ ul {
     /*CENTRA EN LA CAJA*/
     padding: 10px;
     /*DISTANCIA DE BORDE INTERIOR*/
+    border-radius: 20px;
+    /*REDONDEA BORDES DE CAJA*/
 margin: 0 auto;
 
 }

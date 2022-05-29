@@ -3,6 +3,11 @@ p {
     font-style: italic;
 }
 
+#Titulo {
+    margin: 30px;
+    color: blue;
+}
+
 ol {
     color: darkgreen;
     font-family: Arial;
@@ -69,6 +74,7 @@ ul {
 }
 
 form {
+
     height: 400px;
     width: 400px;
     background-color: aqua;
@@ -79,3 +85,5 @@ form {
     background: -webkit-linear-gradient(43deg, #1b00ff 0%, #00ff00 80%);
     background: -moz-linear-gradient(43deg, #1b00ff 0%, #00ff00 80%);
 }
+
+h1{text-shadow: 1px 4px 2px rgba(0,0,0,0.57);}

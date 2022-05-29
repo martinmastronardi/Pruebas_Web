@@ -47,13 +47,14 @@ ul {
 
 /*img {vertical-align:middle;}*/
 
+/* ID */
 .FotoPerfil {
     height: 150px;
     width: 150px;
     margin: 0 auto;
 }
 
-
+/* CLASS */
 .CuadroVerde {
     height: 200px;
     /*ALTURA*/

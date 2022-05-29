@@ -1,0 +1,32 @@
+.Contenedor {
+
+    border: 2px solid black;
+    display: flex;
+    justify-content:space-between;
+
+}
+
+.C1 {
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    box-sizing: border-box;
+    text-align: center;
+   
+}
+
+.C2 {
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    text-align: center;
+    
+}
+
+.C3 {
+    height: 150px;
+    width: 150px;
+    background-color: green;
+    text-align: center;
+    
+}

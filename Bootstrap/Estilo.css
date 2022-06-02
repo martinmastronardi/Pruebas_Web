@@ -1,0 +1,36 @@
+#Prueba1 {
+    background-color: cadetblue;
+}
+
+#col1 {
+    background-color: aquamarine;
+}
+
+#col2 {
+    background-color: coral;
+}
+
+.mb-3 {
+    border: 1px solid black;
+}
+
+#comentario {
+    background-color: burlywood;
+}
+
+#carru {
+    margin-top: 50px;
+}
+
+.col-8 {
+    background-color: blue;
+}
+
+.col-4 {
+    background-color: gray;
+}
+
+#formulario {
+    margin-top: 10%;
+    padding: 2px;
+}

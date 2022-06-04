@@ -16,18 +16,24 @@ header {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#00446c7f', GradientType=0);
     /* IE6-9 */
-    padding: 30px 0;
+    padding: 10px 0;
 }
-header h1{
+
+header img{
+    /* background-color: #333; */
+    height: 150px;
+    width: 200px;
+    
+}
+header h1 {
     font-size: 40px;
     font-weight: 400;
     font-style: italic;
-    
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 15px;
     position: relative;
-    bottom: 35px;
-    
+    bottom: 65px;
+
 }
 
 nav {
@@ -90,15 +96,34 @@ footer {
     clear: both;
     color: #333;
     text-align: center;
-    padding: 5px 0;
-    margin-top: 20px;
+    padding: 1px 0;
+    margin-top: 5px;
+    font-size: 10px;
 }
- 
-.holder{
+
+.holder {
     max-width: 1060px;
     margin: 0 auto;
-} 
+}
 
+h2 {
+    color: #333;
+    font-weight: 400;
+}
 
+/* Inicio Home */
 
+.HomeImg {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
 
+.HomeImg img {
+   
+    height: 250px;
+    width: 90%;
+
+}
+
+/* Fin Home */

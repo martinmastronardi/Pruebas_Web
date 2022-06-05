@@ -17,6 +17,7 @@ header {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#00446c7f', GradientType=0);
     /* IE6-9 */
     padding: 10px 0;
+    cursor: default;
 }
 
 header img{

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <script>
+        var num1 = prompt('1_Ingrese un numero:', '')
+        var num2 = prompt('2_Ingrese otro numero:', '')
+        var num3 = prompt('3_Ingrese otro numero:', '')
+        var num4 = prompt('4_Ingrese otro numero:', '')
+        var num5 = prompt('5_Ingrese otro numero:', '')
+        var num6 = prompt('6_Ingrese otro numero:', '')
+        var numeros = [num1 , num2 , num3 , num4 , num5 , num6]
+        var numMayor = ''
+
+        for (var i = 0; i < numeros.length; i++) {
+            if (numeros[i] > numMayor) {
+                numMayor = numeros[i];
+            }
+
+        }
+        document.write('Numeros registrados ' + numeros + ' Numero Mayor ' + numMayor)
+        console.log('numeros ingresados ' + numeros + ' mayor ' + numMayor)
+
+    </script>
+</body>
+
+</html>

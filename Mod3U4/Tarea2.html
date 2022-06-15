@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 2</title>
+</head>
+
+<body>
+    <textarea id="Comentarios" cols="30" rows="10"></textarea>
+    <div id="Contador">0</div>
+
+    </div>
+    <script>
+        const Comentario = document.getElementById('Comentarios');
+        const Contador = document.getElementById('Contador');
+
+        Comentario.addEventListener('input', function (e) {
+            const i = e.target;
+            const CantidadCaracteres = i.value.length;
+            Contador.innerHTML = `${CantidadCaracteres}`;
+        });
+
+    </script>
+
+</body>
+
+</html>

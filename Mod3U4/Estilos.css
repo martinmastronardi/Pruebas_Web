@@ -1,0 +1,27 @@
+.CuadradoAzul {
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    padding: 16px;
+    margin: 16px;
+    background-color: blue;
+}
+
+.CuadradoRojo {
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    padding: 16px;
+    margin: 16px;
+    background-color: red;
+}
+
+
+.CuadradoVerde {
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    padding: 16px;
+    margin: 16px;
+    background-color: green;
+}

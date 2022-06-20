@@ -12,6 +12,7 @@ import NosotrosPage from './pages/NosotrosPage';
 
 function App() {
   return (
+    
     <div className="App">
       <Header />
       <BrowserRouter> 
@@ -24,9 +25,14 @@ function App() {
       </Routes>
       </BrowserRouter>
       
-      <Footer />
+        <Footer />
+      
     </div>
+
+   
+    
   );
 }
+
 
 export default App;

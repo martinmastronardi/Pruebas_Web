@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.holder {
+  max-width: 1060px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.HomeImg {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.HomeImg img {
+ 
+  height: 250px;
+  width: 90%;
+
+}
+.servicios{
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  border: 1px solid #A7A7F1;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px 0;
+}
+.servicios img{
+  border-radius: 15px;
+  display: block;
+  max-width: 225px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.servicios:nth-child(even){
+  flex-direction: row-reverse;
+}
+
+.servicios .InfoFoto p {
+  font-size: 13px;
+}
+.servicios .InfoFoto h4{
+  border-bottom: 1px solid #A7A7F1;
+  font-weight: 500;
+  font-style: italic;
+  padding-bottom: 10px;
+  color: #333;
+}
+.servicios:hover {
+  transform: scale(1.1);
+  background-color: #F2F3F4 ;
+  cursor: default;
+  box-shadow: 3px 3px 10px black;;
+}
+h2 {
+  color: #333;
+  font-weight: 400;
 }

@@ -1,3 +1,4 @@
+import '../../style/Layout.css'
 import { Link } from "react-router-dom";
 
 const Nav = (props) => {

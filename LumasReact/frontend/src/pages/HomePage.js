@@ -1,7 +1,13 @@
 const HomePage = (props) => {
-    return (
-        <div class="ColBien">
-        <div class="Bienvenidos">
+    return ( 
+        
+    <main className="holder">
+    <div className="HomeImg">
+        <img src="img/palma de la mano.jpg" alt="FotoHome"/>
+    </div>
+    
+    <div className="ColBien" >
+        <div className="Bienvenidos">
             <h2>Bienvenidos</h2>
             <p>Lumas: Nos dedicamos a dar soluciones tecnologicas a grandes, medianas y pequeñas empresa.
                 Contamos con grandes conocimiento y experiencia en el mercado, lo que nos da la capacidad de
@@ -29,6 +35,10 @@ const HomePage = (props) => {
             </p>
         </div>
     </div>
+
+
+
+</main>
     );
 }
 export default HomePage;

@@ -1,0 +1,35 @@
+nav {
+     margin-top: 1px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: black;
+    padding: 3px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+
+footer {
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    text-align: center;
+    padding: 1px 0;
+    width: 100%;
+    position: fixed;
+    font-size: 10px;
+    bottom: 0px;
+}

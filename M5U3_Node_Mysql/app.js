@@ -4,6 +4,16 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+
+/*------------------------------------------------------------*/
+
+/*conexion a la base*/
+
+require('dotenv').config();
+var pool=require('./models/bd');
+
+/*------------------------------------------------------------*/
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
@@ -21,6 +31,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
+
+/*------------------------------------------------------------*/
+
+// CONSULTA MYSQL
+
+pool.query('select * from empleados').then(function(resultados){
+  console.log(resultados)
+});
+
+
+/*------------------------------------------------------------*/
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

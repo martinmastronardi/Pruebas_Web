@@ -35,9 +35,9 @@ app.use(function(req, res, next) {
 //Consulta MySql
 //--------------------------------------------------------------------//
 
-pool.query("select * from usuarios").then(function(resultados){
-  console.log(resultados);
-});
+// pool.query("select * from usuarios").then(function(resultados){
+//   console.log(resultados);
+// });
 
 //--------------------------------------------------------------------//
 

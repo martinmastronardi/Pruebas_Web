@@ -10,6 +10,13 @@ router.get('/', function (req, res, next) {
   });
 });
 
+router.get('/logout', function (req, res, next) {
+  req.session.destroy(); //Elimina variables usuario e id
+  res.render('admin/login', {
+    layout: 'admin/layout'
+  });
+}) //fin de logout
+
 router.post('/', async (req, res, next) => {
   try {
     var usuario = req.body.usuario; //captura usuario

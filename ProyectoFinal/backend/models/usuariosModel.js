@@ -1,5 +1,5 @@
 var pool = require('./bd');
-var md5 = require('md5');
+var md5=require('md5');
 
 async function validarUsuario(user, password) {
     try {

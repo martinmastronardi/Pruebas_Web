@@ -6,11 +6,12 @@ var logger = require('morgan');
 
 require('dotenv').config();
 var pool = require('./models/bd');
+var session = require('express-session');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login');
-var adminRouter = require('./routes/admin/novedades')
+var adminRouter = require('./routes/admin/novedades');
 
 var app = express();
 
@@ -24,10 +25,30 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(session({
+  secret: 'Qwerty2022React',
+  cookie: { maxAge: null },                          //Seguridad para no saltar login 
+  resave: false,
+  saveUninitialized: true
+}))
+
+secured = async (req, res, next) => {
+  try {
+    console.log(req.session.id_usuario);
+    if (req.session.id_usuario) {
+      next();
+    } else {
+      res.redirect('/admin/login');
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
-app.use('/admin/novedades', adminRouter);
+app.use('/admin/novedades',secured, adminRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

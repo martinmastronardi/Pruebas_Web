@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 08-08-2022 a las 14:58:28
+-- Tiempo de generación: 06-09-2022 a las 17:26:21
 -- Versión del servidor: 5.7.36
 -- Versión de PHP: 7.4.26
 
@@ -24,16 +24,50 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `novedades`
+--
+
+DROP TABLE IF EXISTS `novedades`;
+CREATE TABLE IF NOT EXISTS `novedades` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(250) NOT NULL,
+  `subtitulo` text NOT NULL,
+  `novedad` text NOT NULL,
+  `img_id` varchar(250) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `novedades`
+--
+
+INSERT INTO `novedades` (`id`, `titulo`, `subtitulo`, `novedad`, `img_id`) VALUES
+(1, 'Desarrollos Personalizados', 'Software a medida', 'Lumas se enfoca en el desarrollo personalizado y en las necesidades puntuales de cualquier ambito.', NULL),
+(2, 'Hardware', 'Infraestructura', 'Trabajamos para dar las mejores soluciones a nivel infraestructura. Server, PC, Red, comunicaciones, RF.', NULL),
+(3, 'Prueba2', 'Modificando', 'Segunda prueba de modificacion de novedades', NULL),
+(4, 'Prueba ', 'Modificar', 'Probando modificacion de novedad', NULL),
+(11, '12', '1', 'q', 'https://res.cloudinary.com/dq9io9bxh/image/upload/v1661995575/ubmdidexp3w3bl8r9ro6.jpg');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `usuarios`
 --
 
 DROP TABLE IF EXISTS `usuarios`;
 CREATE TABLE IF NOT EXISTS `usuarios` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
-  `Usuario` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
-  `Password` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
+  `usuario` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
+  `password` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `usuario`, `password`) VALUES
+(1, 'martin', '81dc9bdb52d04dc20036dbd8313ed055');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

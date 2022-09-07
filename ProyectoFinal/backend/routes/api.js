@@ -27,7 +27,7 @@ router.get('/novedades', async function (req, res, next) {
     res.json(novedades);
 });
 
-router.post('contacto', async (req, res) => {
+router.post('/contacto', async (req, res) => {
     const mail = {
         to: 'mastronardi390@gmail.com',
         subject: 'Contacto Web',
@@ -45,7 +45,7 @@ router.post('contacto', async (req, res) => {
         }
     });
     await transport.sendMail(mail)
-    req.statusCode(201).json({
+    res.status(201).json({
         error: false,
         message: 'Mensaje Enviado'
     }); 

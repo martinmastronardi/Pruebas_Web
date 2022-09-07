@@ -112,7 +112,7 @@ h2 {
 }
 
 /* NOVEDADES*/
-.novedades {
+ .novedades {
     display: flex;
     align-items: center;
     gap: 32px;
@@ -121,7 +121,27 @@ h2 {
     padding: 16px;
     margin: 16px 0;
     background-color: #ebebfa;
-}
+}  
+  .novedades img{
+    border-radius: 15px;
+    display: block;
+    max-width: 225px;
+    
+  }
+  
+  .novedades .InfoNove h4{
+    font-weight: 500;
+    font-style: italic;
+    padding-bottom: 10px;
+    color: #333;
+  }
+
+  .novedades .InfoNove h3{
+    font-weight: 800;
+    font-style: italic;
+    padding-bottom: 0px;
+    color: rgb(19, 1, 116);
+  }
 
 /*CONTACTO*/
 .contacto {

@@ -1,56 +1,58 @@
 import React from 'react';
 
+// const NovedadesItem = (props) => {
+//     const { title, subtitle, imagen, body} = props;
+//     return (
+
+
+//         <div className='novedades'>
+
+//             <h1>{title}</h1>
+//             <h2>{subtitle}</h2>
+//             <img src={imagen}/>
+//             <div dangerouslySetInnerHTML={{ __html: body }} />
+
+//         </div>
+
+//     );
+// }
+
+
+
 const NovedadesItem = (props) => {
-    const { title, subtitle, imagen, body} = props;
+    const { title, subtitle, imagen, body } = props;
+
     return (
 
-            
-        <div className='novedades'>
-            
-            <h1>{title}</h1>
-            <h2>{subtitle}</h2>
-            <img src={imagen}/>
-            <div dangerouslySetInnerHTML={{ __html: body }} />
-            
+        <div>
+            <main className='holder'>
+
+                <hr />
+                <div className='novedades'>
+                <img src={imagen} />  
+                <div className='InfoNove'>  
+                    <h3>{title}</h3>
+                    <h4>{subtitle}</h4>
+                    
+                    <div dangerouslySetInnerHTML={{ __html: body }} />
+                    </div>
+                </div>
+            </main>
         </div>
-        
     );
 }
 
 export default NovedadesItem;
 
+// <div className="servicios">
+// <img src="img/foto2.jpg" alt="ModLog" />
 
-    //     return (
-    //         <div>
-    //             <main class="holder">
-    //                 <h2>Novedades</h2>
-    //                 <hr />
-    //                 <div class="novedades">
-    //                     <h3>Titulo</h3>
-    //                     <h4>Subtitulo</h4>
-    //                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at libero saepe eveniet voluptatum placeat
-    //                         voluptate, distinctio itaque officiis quasi voluptatem nihil vero mollitia. Quo impedit numquam
-    //                         aspernatur molestias possimus.</p>
-    //                     <hr />
-    //                 </div>
-    //                 <div class="novedades">
-    //                     <h3>Titulo</h3>
-    //                     <h4>Subtitulo</h4>
-    //                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at libero saepe eveniet voluptatum placeat
-    //                         voluptate, distinctio itaque officiis quasi voluptatem nihil vero mollitia. Quo impedit numquam
-    //                         aspernatur molestias possimus.</p>
-    //                     <hr />
-    //                 </div>
-    //                 <div class="novedades">
-    //                     <h3>Titulo</h3>
-    //                     <h4>Subtitulo</h4>
-    //                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at libero saepe eveniet voluptatum placeat
-    //                         voluptate, distinctio itaque officiis quasi voluptatem nihil vero mollitia. Quo impedit numquam
-    //                         aspernatur molestias possimus.</p>
-    //                     <hr />
-    //                 </div>
-    //             </main>
-    //         </div>
-    //     );
-    // }
-    
+// <div className="InfoFoto">
+//     <h4>Control de Inventario</h4>
+//     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam officiis eius labore porro
+//         nostrum in
+//         consectetur eaque qui odio corporis? Nobis minus, culpa natus sunt molestias eligendi labore.
+//         Numquam,
+//         saepe?</p>
+// </div>
+// </div>

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import NovedadItem from '../components/novedades/NovedadItem';
 
@@ -25,14 +25,14 @@ const NosotrosPage = (props) => {
                 ) : (
                     novedades.map(item => <NovedadItem key={item.id}
                         title={item.titulo} subtitle={item.subtitulo}
-                        imagen={item.imagen} body={item.noveda} />)
+                        imagen={item.imagen} body={item.novedad} />)
                 )}
         </section>
     );
-                    }
-                    
+}
 
-    export default NosotrosPage;
+
+export default NosotrosPage;
 
     //     return (
     //         <div>
@@ -67,4 +67,3 @@ const NosotrosPage = (props) => {
     //         </div>
     //     );
     // }
-    
